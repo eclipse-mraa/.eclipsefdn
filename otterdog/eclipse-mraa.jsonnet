@@ -39,6 +39,7 @@ orgs.newOrg('iot.mraa', 'eclipse-mraa') {
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
+        fork_pr_approval_policy: "all_external_contributors",
       },
       webhooks: [
         orgs.newRepoWebhook('https://hooks.slack.com/services/T1J561YPQ/*') {
