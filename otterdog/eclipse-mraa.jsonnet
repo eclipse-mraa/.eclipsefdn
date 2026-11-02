@@ -15,8 +15,8 @@ orgs.newOrg('iot.mraa', 'eclipse-mraa') {
   },
   _repositories+:: [
     orgs.newRepo('mraa') {
-      allow_squash_merge: false,
-      allow_update_branch: false,
+      allow_squash_merge: true,
+      allow_update_branch: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
